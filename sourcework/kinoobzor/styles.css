@@ -1,0 +1,1301 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5DB;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #E5E5DB;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: inherit;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo-cinema {
+    color: #E39E2E;
+}
+
+.logo-review {
+    color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: #DDB16B;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+}
+.search-bar button, .button-style {
+    padding: 5px 10px;
+    background-color: #DDB16B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.button-style:hover {
+    background-color: #c69a5a;
+}
+.auth-section {
+    display: flex;
+    align-items: center;
+}
+.user-panel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-panel span {
+    color: rgb(37, 34, 34);
+    font-size: 16px;
+}
+.genre-bar {
+    background-color: #d3ad71;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+.genre-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #d6a46b;
+    border-radius: 5px;
+    flex: 1 1 auto;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.genre-bar a:hover {
+    background-color: #e9c681;
+    color: #f9f9f9;
+}
+.popular-reviews {
+    padding: 20px;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E5E5DB;
+}
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+.login-box h2 {
+    margin-bottom: 20px;
+}
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.login-box a {
+    color: #DDB16B;
+    text-decoration: none;
+    font-size: 14px;
+}
+.login-box button {
+    background-color: #DDB16B;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.profile-main {
+    width: 80%;
+    max-width: 800px;
+}
+.profile-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.profile-info form {
+    display: flex;
+    flex-direction: column;
+}
+.profile-info:hover {
+    transform: scale(1.02);
+}
+.profile-info h2 {
+    margin-bottom: 20px;
+}
+.profile-info p {
+    margin: 10px 0;
+}
+.profile-info a {
+    display: inline-block;
+    margin-top: 10px;
+}
+.profile-info label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.profile-info input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.profile-info input:focus {
+    border-color: #DDB16B;
+}
+.profile-info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #DDB16B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.profile-info button:hover {
+    background-color: #c69a5a;
+    transform: scale(1.05);
+}
+
+.profile-info p.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.profile-reviews {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    border-left: 4px solid #DDB16B;
+    padding: 15px 15px 15px 20px; /* Увеличил левый padding */
+    margin-bottom: 20px;
+    border-radius: 0 5px 5px 0;
+    position: relative; /* Для псевдоэлемента */
+    overflow: hidden; /* Обрезаем псевдоэлемент */
+}
+.review-item p {
+    margin: 10px 0;
+}
+
+.review-item-content {
+    padding-left: 10px; /* Дополнительный отступ от полосы */
+}
+
+.review-item small {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.bookmarks-container {
+    padding: 20px;
+}
+
+.bookmark-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bookmark-list li {
+    margin-bottom: 10px;
+}
+
+.bookmark-list a {
+    text-decoration: none;
+    color: #DDB16B;
+    font-size: 18px;
+}
+
+.bookmark-list a:hover {
+    color: #a97342;
+}
+
+.search-results {
+    padding: 20px;
+}
+
+.search-results h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results li {
+    margin-bottom: 10px;
+}
+
+.search-results a {
+    text-decoration: none;
+    color: #DDB16B;
+}
+
+.search-results a:hover {
+    color: #a97342;
+}
+
+.movie-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.movie-container h1 {
+    margin-bottom: 10px;
+}
+
+.movie-container p {
+    margin: 10px 0;
+}
+
+.movie-actions {
+    margin: 20px 0;
+}
+
+.movie-actions form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.movie-actions button {
+    padding: 5px 10px;
+    background-color: #DDB16B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.movie-actions button:hover {
+    background-color: #c69a5a;
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+.review-form h2 {
+    margin-bottom: 10px;
+}
+
+.review-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.review-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #DDB16B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #c69a5a;
+}
+
+.review-form p.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.popular-reviews {
+    padding: 25px; 
+    background-color: #E5E5DB; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popular-reviews h1 {
+    font-size: 28px; 
+    margin-bottom: 20px;
+}
+
+.popular-reviews ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-reviews li, .new-movies li {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.popular-reviews li:hover, .new-movies li:hover {
+    background-color: #e9f5f5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popular-reviews li:last-child {
+    border-bottom: none;
+}
+
+.popular-reviews .review-item strong a, .new-movies .movie-item h3 a {
+    font-size: 20px;
+    color: #DDB16B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.popular-reviews .review-item p {
+    font-size: 18px; 
+    margin: 10px 0;
+}
+
+.popular-reviews .review-item small {
+    font-size: 16px; 
+    color: #777;
+}
+
+.popular-reviews li strong a {
+    color: #DDB16B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.popular-reviews li strong a:hover {
+    color: #a97342;
+}
+.popular-reviews li p {
+    margin: 5px 0;
+}
+.popular-reviews li small {
+    color: #777;
+}
+.genre-container {
+    padding: 20px;
+}
+.genre-container h2 {
+    margin-bottom: 20px;
+}
+.movie-list {
+    list-style: none;
+    padding: 0;
+}
+.movie-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.movie-item:last-child {
+    border-bottom: none;
+}
+.movie-item h3 a {
+    color: #DDB16B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.movie-item h3 a:hover {
+    color: #a97342;
+}
+.movie-item p {
+    margin: 5px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: #e2be83;
+    color: #fff;
+    padding: 15px;
+    z-index: 100;
+}
+
+.footer-container {
+    background-color: #e2be83;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container p {
+    margin: 0;
+}
+.social-links {
+    margin-top: 5px;
+}
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: black;
+}
+.footer-visible {
+    opacity: 1;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #DDB16B;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 50px auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.auth-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.auth-section a.button-style {
+    margin-right: 10px; 
+}
+
+.auth-section a.button-style:last-child {
+    margin-right: 0; 
+}
+
+.new-movies {
+    padding: 20px;
+    background-color: #E5E5DB;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; 
+}
+
+.new-movies h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.new-movies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.new-movies .movie-item p {
+    font-size: 18px; 
+    margin: 10px 0;
+}
+
+.genre-container {
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px; 
+}
+
+.genre-container h2 {
+    font-size: 28px; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.genre-container .movie-list {
+    list-style: none;
+    padding: 0;
+}
+
+.genre-container .movie-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.genre-container .movie-item:hover {
+    background-color: #e9f5f5; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.02);
+}
+
+.genre-container .movie-item h3 a {
+    font-size: 20px; 
+    color: #DDB16B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.genre-container .movie-item h3 a:hover {
+    color: #a97342;
+}
+
+.genre-container .movie-item p {
+    font-size: 18px; 
+    margin: 10px 0;
+}
+
+.genre-container p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rating-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.rating-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rating-range {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.rating-count {
+    font-size: 16px;
+    color: #DDB16B;
+    font-weight: bold;
+}
+
+.reviews-container {
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.reviews-container select {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.review-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    border-left: 4px solid #DDB16B;
+    padding: 15px 15px 15px 25px; /* Увеличиваем левый отступ */
+    margin-bottom: 20px;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+}
+
+.no-reviews {
+    padding-left: 25px;
+    color: #666;
+    font-style: italic;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-item strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.review-item strong a {
+    color: #333;
+    text-decoration: none;
+}
+
+.review-item p {
+    margin: 8px 0;
+    padding-left: 10px; /* Дополнительный отступ для текста */
+}
+
+.review-item small {
+    color: #777;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px; /* Отступ для даты */
+}
+
+.review-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-form label {
+    font-weight: bold;
+}
+
+.review-form input, .review-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    background-color: #DDB16B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #c69a5a;
+}
+
+.error-message {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+.admin-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-section {
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.moderation-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.user-info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.section-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+.item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.delete-form {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.user-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.detail-item {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+.danger-zone {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff8f8;
+    border: 1px solid #ffdddd;
+    border-radius: 8px;
+}
+
+/* Контейнер профиля */
+.admin-profile-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.admin-panel.moderator {
+    border-left: 4px solid #3498db; /* Синий для модератора */
+}
+.admin-panel.admin {
+    border-left: 4px solid #e74c3c; /* Красный для админа */
+}
+
+/* Секции профиля */
+.admin-profile-section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.admin-user-info {
+    background: #f8f9fa;
+}
+
+/* Информация о пользователе */
+.user-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.user-detail-item {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: #212529;
+}
+
+/* Списки контента */
+.content-list {
+    margin-top: 20px;
+}
+
+.content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.item-content {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.item-action {
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.item-meta {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.item-date {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.item-rating {
+    font-weight: bold;
+    color: #fd7e14;
+    margin: 5px 0;
+}
+
+/* Кнопки */
+.btn-delete {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+.btn-danger {
+    background: #dc3545;
+    padding: 10px 20px;
+}
+
+/* Закладки */
+.bookmark-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.bookmark-item {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.bookmark-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.bookmark-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;}
+
+.bookmark-item a::before {
+    content: "★";
+    color: #DDB16B;
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.bookmark-meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    gap: 15px;
+}
+
+.no-bookmarks {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 40px 0;
+}
+
+.danger-zone {
+    background: #fff8f8;
+    border: 1px solid #ffdddd;
+}
+
+.no-content {
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Управление ролями */
+.role-select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+
+.save-role-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-role-btn:hover {
+    background-color: #45a049;
+}
+
+.admin-section table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.admin-section th {
+    background: #DDB16B;
+    color: white;
+    padding: 10px;
+}
+
+.admin-section td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-edit-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Стили для секций профиля */
+.profile-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для списка комментариев */
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-item {
+    background-color: #f0f0f0;
+    border-left: 4px solid #a0a0a0;
+    padding: 10px 10px 10px 20px; /* Добавлен отступ слева (20px) */
+    margin: 10px 0;
+    border-radius: 0 5px 5px 0;
+    margin-left: 10px;
+    font-size: 0.95em;
+}
+
+.comment-item p {
+    margin: 5px 0;
+}
+
+.comment-item small {
+    color: #555;
+    font-size: 0.8em;
+}
+
+.comments {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comments-section {
+    margin-top: 15px; /* Отступ сверху от отзыва */
+    padding-left: 20px; /* Отступ слева для выравнивания с контентом */
+}
+
+/* Сообщение "Комментариев пока нет" */
+.comments-section .no-comments {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px; /* Отступ снизу */
+    border-left: 3px solid #ddd; /* Серая полоска для стиля */
+}
+
+.toggle-comments {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 5px 5px;
+}
+
+.toggle-comments:hover {
+    background-color: #d0d0d0;
+}
+
+.comment-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.comment-movie a {
+    color: #DDB16B;
+    text-decoration: none;
+}
+
+.comment-movie a:hover {
+    text-decoration: underline;
+}
+
+.comment-review {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #DDB16B;
+}
+
+.comment-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .comment-meta {
+        flex-direction: column;
+    }
+    
+    .comment-date {
+        margin-top: 5px;
+    }
+}
+
+/* Стили для формы добавления фильма */
+.movie-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #c3e6cb;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+}
+
+/* В таблице фильмов */
+.admin-section table th:nth-child(6),
+.admin-section table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
